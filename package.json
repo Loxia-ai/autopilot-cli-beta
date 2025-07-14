@@ -1,6 +1,6 @@
 {
   "name": "loxia-autopilot-cli",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Loxia Labs Multipurpose AI-Agent (Obfuscated)",
   "main": "index.js",
   "type": "module",
@@ -29,7 +29,12 @@
     "sqlite3": "^5.1.7",
     "table": "^6.8.1",
     "uuid": "^11.1.0",
-    "winston": "^3.17.0"
+    "winston": "^3.17.0",
+    "dotenv": "^16.5.0",
+    "node-fetch": "^3.3.0",
+    "axios": "^1.7.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "express": "^5.1.0"
   },
   "engines": {
     "node": ">=16.0.0"
