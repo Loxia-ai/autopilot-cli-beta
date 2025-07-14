@@ -4,6 +4,9 @@
   "description": "Loxia Labs Multipurpose AI Agent (Obfuscated)",
   "main": "index.js",
   "type": "module",
+  "bin": {
+    "loxia": "./index.js"
+  },
   "author": "Daniel Suissa",
   "license": "SEE LICENSE IN LICENSE.txt",
   "dependencies": {
