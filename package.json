@@ -1,6 +1,6 @@
 {
   "name": "loxia-autopilot-cli",
-  "version": "0.5.7",
+  "version": "0.5.8",
   "description": "Loxia Labs Multipurpose AI-Agent (Obfuscated)",
   "main": "index.js",
   "type": "module",
