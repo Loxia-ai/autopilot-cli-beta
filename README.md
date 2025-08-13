@@ -1,10 +1,10 @@
-# Loxia Autopilot CLI
+# Loxia Autopilot CLI & VS Code Extension
 
 > **Dependency:** This software requires [Node.js](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (includes npm). Please install Node.js before proceeding.
 
-> AI-powered development companion that builds, modifies, and manages your projects using multiple AI models.
+> AI-powered development companion that builds, modifies, and manages your projects using multiple AI models. Available as both a command-line tool and VS Code extension.
 
-[![Version](https://img.shields.io/badge/version-0.5.9-blue.svg)](https://github.com/loxia-ai/autopilot-cli)
+[![Version](https://img.shields.io/badge/version-0.6.0-blue.svg)](https://github.com/loxia-ai/autopilot-cli)
 [![License](https://img.shields.io/badge/license-SEE%20LICENSE%20IN%20LICENSE.txt-green.svg)](LICENSE.txt)
 [![Node](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen.svg)](https://nodejs.org)
 
@@ -35,6 +35,34 @@ loxia status
 ```bash
 loxia do "create a React app with TypeScript"
 ```
+
+## 🔌 VS Code Extension
+
+Loxia is also available as a VS Code extension for integrated development assistance.
+
+### Extension Installation
+
+1. **Option A: Install from VSIX file**
+```bash
+# After building the extension
+npm run package:extension
+code --install-extension loxia-autopilot.vsix
+```
+
+2. **Option B: Install from VS Code Marketplace** (coming soon)
+
+### Extension Features
+
+- **Chat Interface**: AI-powered chat panel in the sidebar
+- **Code Analysis**: Right-click to analyze code selections
+- **Command Palette**: Access Loxia commands via `Ctrl+Shift+P`
+- **Integrated Workflow**: Uses same API key and backend as CLI
+
+### Extension Usage
+
+1. Open VS Code and look for "Loxia AI" in the sidebar
+2. Use `Ctrl+Shift+P` and search for "Loxia" commands
+3. Start chatting with your AI assistant directly in VS Code
 
 ## 📋 Commands Overview
 

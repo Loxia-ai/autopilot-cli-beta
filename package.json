@@ -1,14 +1,48 @@
 {
   "name": "loxia-autopilot-cli",
-  "version": "0.5.9",
-  "description": "Loxia Labs Multipurpose AI-Agent (Obfuscated)",
+  "version": "0.6.0",
+  "description": "Loxia Labs Multipurpose AI-Agent - CLI and VS Code Extension (Obfuscated)",
   "main": "index.js",
   "type": "module",
   "bin": {
     "loxia": "./index.js"
   },
+  "extensionEntry": "extension.js",
   "author": "Daniel Suissa",
   "license": "SEE LICENSE IN LICENSE.txt",
+  "publisher": "loxia-labs",
+  "displayName": "Loxia AI Agent",
+  "categories": [
+    "AI",
+    "Code Generation",
+    "Productivity"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "loxia.chat",
+        "title": "Start AI Chat",
+        "category": "Loxia"
+      },
+      {
+        "command": "loxia.analyze",
+        "title": "Analyze Code",
+        "category": "Loxia"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "loxiaChat",
+          "name": "Loxia AI",
+          "when": "true"
+        }
+      ]
+    }
+  },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.40.1",
     "@azure-rest/ai-inference": "^1.0.0-beta.6",
@@ -37,10 +71,37 @@
     "express": "^5.1.0"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=16.0.0",
+    "vscode": "^1.80.0"
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "echo 'No TypeScript compilation needed'",
+    "package:extension": "npx @vscode/vsce package --no-dependencies --out loxia-autopilot.vsix",
+    "package:npm": "npm pack",
+    "package:all": "npm run package:npm && npm run package:extension",
+    "deploy:extension": "npx @vscode/vsce publish",
+    "deploy:npm": "npm publish",
+    "test:cli": "node index.js --version",
+    "test:extension": "echo 'Extension test requires VS Code environment'",
+    "dev": "node index.js"
   },
   "directories": {
     "test": "test"
   },
-  "keywords": []
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loxia-labs/autopilot-cli.git"
+  },
+  "homepage": "https://github.com/loxia-labs/autopilot-cli",
+  "bugs": {
+    "url": "https://github.com/loxia-labs/autopilot-cli/issues"
+  },
+  "keywords": [
+    "ai",
+    "automation",
+    "development",
+    "assistant",
+    "code-generation"
+  ]
 }
