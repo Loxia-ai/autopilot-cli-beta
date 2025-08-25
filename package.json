@@ -1,6 +1,6 @@
 {
   "name": "loxia-autopilot-cli",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Loxia Labs Multipurpose AI-Agent - CLI and VS Code Extension (Obfuscated)",
   "main": "index.js",
   "type": "module",
