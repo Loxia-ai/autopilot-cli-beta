@@ -4,7 +4,7 @@
 
 > AI-powered development companion that builds, modifies, and manages your projects using multiple AI models. Available as both a command-line tool and VS Code extension.
 
-[![Version](https://img.shields.io/badge/version-0.6.3-blue.svg)](https://github.com/loxia-ai/autopilot-cli)
+[![Version](https://img.shields.io/badge/version-0.6.4-blue.svg)](https://github.com/loxia-ai/autopilot-cli)
 [![License](https://img.shields.io/badge/license-SEE%20LICENSE%20IN%20LICENSE.txt-green.svg)](LICENSE.txt)
 [![Node](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen.svg)](https://nodejs.org)
 
